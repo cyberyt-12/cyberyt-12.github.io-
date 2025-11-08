@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>100 Viral Content Ideas</title>
+    <style>
+  body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: red;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px;
+          title colour:- black
+        }
+
+        h2 {
+            color: white;
+            font-size: 28px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .box {
+            width: 90%;
+            max-width: 600px;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+            border: 2px solid white;
+            background-color: black; /* بکس بلیک */
+            color: white; /* بکس کے اندر ٹیکسٹ وائٹ */
+            border-radius: 10px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(255,255,255,0.3);
+        }
+
+        h3 {
+            margin: 0;
+        }
+
+        p {
+            margin-top: 10px;
+            font-size: 16px;
+            line-height: 1.4;
+            display: none;
+            color: white; /* پاپ اپ پیراگراف بھی وائٹ */
+        }
+
+        a {
+            color: white; /* لنک وائٹ */
+            text-decoration: underline;
+        }
+
+        .back-btn {
+            margin-top: 30px;
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: 0.3s;
+            border: 2px solid white;
+        }
+
+        .back-btn:hover {
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+<h2> 🔥🔥🔥
+100 Viral Content Ideas
+👇👇👇
+</h2>
+
+<div class="box" onclick="window.open('https://www.example.com', '_blank')">
+    <h3>100 viral 🔥🔥🔥 content ideas  💯💯💯</h3>
+</div>
+
+<div class="box">
+    <h3>Click on the niches given below 👇</h3>
+</div>
+
+<div id="boxes-container"></div>
+
+<a href="main.html" class="back-btn">⬅ Back to Home</a>
+
+<script>
+const ideas = [
+"AI Vlogging Tips", "AI Podcasting Ideas", "Animal Vlogging Concepts", "Short Motivational Clips",
+"Trending Challenges", "Life Hacks Videos", "Productivity Tips", "Fun Facts About AI",
+"Healthy Lifestyle Tips", "Funny Pet Videos", "Daily Motivation Quotes", "Social Media Tricks",
+"DIY Craft Ideas", "Cooking Hacks", "Travel Vlogs", "Fitness Routines", "Study Hacks", "Gaming Tips",
+"Animation Tutorials", "Music Cover Ideas", "Fashion Styling Tips", "Makeup Tutorials", "Tech Reviews",
+"Smartphone Tricks", "Motivational Speeches", "Comedy Skits", "AI Art Tutorials", "Meditation Tips",
+"Life Advice Videos", "Trending Memes", "Unboxing Videos", "Educational Content", "Science Experiments",
+"Book Reviews", "Art Inspiration Videos", "AI News Updates", "Funny Pranks", "Car Reviews",
+"Life Story Videos", "Fitness Challenges", "Travel Hacks", "Pet Care Tips", "AI Tools Tutorials",
+"Makeup Hacks", "Fashion DIY", "Cooking Tutorials", "Daily Routines Tips", "Viral Dance Ideas",
+"Motivational Interviews", "Nature Vlogs", "Gardening Hacks", "Study Motivation", "Tech Tutorials",
+"AI Generated Art", "Movie Reviews", "Web Development Tips", "Healthy Snacks Ideas",
+"Viral Content Trends", "Motivation for Work", "Funny AI Experiments", "Product Reviews",
+"Travel Diaries", "Motivational Quotes Compilation", "AI Hacks for Productivity", "Fitness Motivation Videos",
+"Meditation Challenges", "Viral TikTok Ideas", "Funny Animal Moments", "Cooking Experiments",
+"Travel Tips & Tricks", "Fashion Trends 2025", "Makeup Transformations", "Tech Unboxing",
+"AI Creativity Hacks", "Motivational Stories", "Social Media Strategies", "Productivity Hacks",
+"Life Skill Tutorials", "AI Assistant Tricks", "Fitness Tips at Home", "Tech News Updates",
+"Study Motivation Hacks", "Daily Inspiration Videos", "AI Tutorial Series", "Creative DIY Projects",
+"Travel Experience Vlogs", "Ultimate Viral Content List", "Self-Improvement Habits",
+"AI Future Predictions", "Positive Mindset Shorts", "Top 10 List Videos", "Motivational AI Stories",
+"Lifestyle Transformation Ideas", "AI Tools Review", "Pet Lifestyle Vlogs", "Study Tips Compilation",
+"Productivity Secrets", "AI Growth Hacks", "Motivational Shorts", "Content Creation Secrets"
+];
+
+const container = document.getElementById('boxes-container');
+
+ideas.forEach((idea, index) => {
+    const box = document.createElement('div');
+    box.className = 'box';
+    box.innerHTML = `
+        <h3>${index + 1}. ${idea}</h3>
+        <p>
+            Wow! That's a great choice 💯💯💯. If you want to learn how to make this kind of video, come on my channel and ask me about it.<br>
+            Channel Link 👇<br>
+            <a href="https://www.youtube.com/@Cyber-Ytt" target="_blank">https://www.youtube.com/@Cyber-Ytt</a><br><br>
+            Your choice is very good. You can ask me about how to make this video on my channel.
+        </p>
+    `;
+    box.addEventListener('click', () => {
+        const para = box.querySelector('p');
+        para.style.display = para.style.display === 'none' ? 'block' : 'none';
+    });
+    container.appendChild(box);
+});
+</script>
+
+</body>
+</html>
